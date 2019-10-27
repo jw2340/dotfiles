@@ -1,0 +1,11 @@
+# ----------------------
+# Aliases
+# ----------------------
+alias create-mfa-creds="fabric aws-mfa::create-credentials"
+
+
+# ----------------------
+# Functions
+# ----------------------
+# save daily funds report
+function copy-reports() { aws s3 cp --recursive s3://prod-fabrictech/vantis/daily-funds-report/$1 ~/tmp/vantis/daily-funds-report/$1; }

@@ -73,7 +73,7 @@ source $ZSH/oh-my-zsh.sh
 # custom zh configuration
 export AWS_USER=jin
 
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 source $HOME/.functions
 source $HOME/.aliases

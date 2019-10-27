@@ -3,9 +3,9 @@
 # ----------------------
 alias create-mfa-creds="fabric aws-mfa::create-credentials"
 
+# runs task-minder.sh on a command to say done or error
+alias mind="sh $HOME/task-minder.sh"
 
-# ----------------------
-# Functions
-# ----------------------
-# save daily funds report
-function copy-reports() { aws s3 cp --recursive s3://prod-fabrictech/vantis/daily-funds-report/$1 ~/tmp/vantis/daily-funds-report/$1; }
+# Git
+alias glom='git pull origin master'
+alias gcbom=git_checkout_branch_from_origin_master

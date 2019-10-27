@@ -71,6 +71,12 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # custom zh configuration
+export AWS_USER=jin
+
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+source $HOME/.functions
+source $HOME/.aliases
 
 # Base vi mode configuration
 # https://dougblack.io/words/zsh-vi-mode.html
@@ -113,6 +119,8 @@ bindkey '^r' history-incremental-search-backward
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export AWS_USER=jin
 
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+
+
+

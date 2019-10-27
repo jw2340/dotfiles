@@ -1,0 +1,14 @@
+# ----------------------
+# Functions
+# ----------------------
+
+# save daily funds report
+copy-reports() { 
+  aws s3 cp --recursive s3://prod-fabrictech/vantis/daily-funds-report/$1 ~/tmp/vantis/daily-funds-report/$1;
+}
+
+git_checkout_branch_from_origin_master()
+{
+  git fetch # refresh origin/master
+  git checkout -b $1 origin/master --no-track # create new branch off of it
+}

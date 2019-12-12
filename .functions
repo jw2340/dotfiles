@@ -7,10 +7,10 @@ copy-daily-report() {
   aws s3 cp --recursive s3://prod-fabrictech/vantis/daily-funds-report/$1 ~/tmp/vantis/daily-funds-report/$1;
 }
 
-copy-vantis-reports() {
-  aws s3 cp --recursive s3://prod-fabrictech/vantis/monthly-reports/$1 ~/tmp/vantis/monthly-reports/$1;
-  aws s3 cp --recursive s3://prod-fabrictech/vantis/quarterly-reports/$1 ~/tmp/vantis/quarterly-reports/$1;
-  aws s3 cp --recursive s3://prod-fabrictech/vantis/annual-reports/$1 ~/tmp/vantis/annual-reports/$1;
+copy-vantis-reports-dev() {
+  aws s3 cp --recursive s3://dev-fabrictech/vantis/monthly-reports/$1 ~/tmp/dev/vantis/monthly-reports/$1;
+  aws s3 cp --recursive s3://dev-fabrictech/vantis/quarterly-reports/$1 ~/tmp/dev/vantis/quarterly-reports/$1;
+  aws s3 cp --recursive s3://dev-fabrictech/vantis/annual-reports/$1 ~/tmp/dev/vantis/annual-reports/$1;
 }
 
 git_checkout_branch_from_origin_master()

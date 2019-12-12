@@ -3,8 +3,14 @@
 # ----------------------
 
 # save daily funds report
-copy-reports() { 
+copy-daily-report() { 
   aws s3 cp --recursive s3://prod-fabrictech/vantis/daily-funds-report/$1 ~/tmp/vantis/daily-funds-report/$1;
+}
+
+copy-vantis-reports() {
+  aws s3 cp --recursive s3://prod-fabrictech/vantis/monthly-reports/$1 ~/tmp/vantis/monthly-reports/$1;
+  aws s3 cp --recursive s3://prod-fabrictech/vantis/quarterly-reports/$1 ~/tmp/vantis/quarterly-reports/$1;
+  aws s3 cp --recursive s3://prod-fabrictech/vantis/annual-reports/$1 ~/tmp/vantis/annual-reports/$1;
 }
 
 git_checkout_branch_from_origin_master()
@@ -12,3 +18,6 @@ git_checkout_branch_from_origin_master()
   git fetch # refresh origin/master
   git checkout -b $1 origin/master --no-track # create new branch off of it
 }
+
+export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi'
+precmd() { eval "$PROMPT_COMMAND" }

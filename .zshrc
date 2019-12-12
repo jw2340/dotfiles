@@ -72,6 +72,7 @@ source $ZSH/oh-my-zsh.sh
 
 # custom zh configuration
 export AWS_USER=jin
+export AWS_SDK_LOAD_CONFIG=true
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 

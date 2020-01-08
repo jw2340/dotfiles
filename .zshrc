@@ -125,3 +125,8 @@ bindkey '^r' history-incremental-search-backward
 
 
 
+alias use-orgs='bash /Users/jin/fabric/linen/tools/use-orgs.sh; export AWS_PROFILE=orgs_admin'
+alias use-og='bash /Users/jin/fabric/linen/tools/use-og.sh; unset AWS_PROFILE'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPS="--extended"

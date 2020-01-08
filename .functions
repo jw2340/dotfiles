@@ -7,6 +7,10 @@ copy-daily-report() {
   aws s3 cp --recursive s3://prod-fabrictech/vantis/daily-funds-report/$1 ~/tmp/vantis/daily-funds-report/$1;
 }
 
+copy-daily-report-dev() {
+  aws s3 cp --recursive s3://dev-fabrictech/vantis/daily-funds-report/$1 ~/tmp/dev/vantis/daily-funds-report/$1;
+}
+
 copy-vantis-reports-dev() {
   aws s3 cp --recursive s3://dev-fabrictech/vantis/monthly-reports/$1 ~/tmp/dev/vantis/monthly-reports/$1;
   aws s3 cp --recursive s3://dev-fabrictech/vantis/quarterly-reports/$1 ~/tmp/dev/vantis/quarterly-reports/$1;

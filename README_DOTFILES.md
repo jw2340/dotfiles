@@ -23,4 +23,10 @@ sh install.sh
 
 # update ZSH export in .zshrc if username is different TODO: scriptify this
 # export ZSH="/Users/{username}/.oh-my-zsh"
+
+# possible errors and solutions
+
+zsh compinit: insecure directories, run compaudit for list.
+https://stackoverflow.com/questions/13762280/zsh-compinit-insecure-directories
 ```
+

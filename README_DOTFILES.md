@@ -28,5 +28,9 @@ sh install.sh
 
 zsh compinit: insecure directories, run compaudit for list.
 https://stackoverflow.com/questions/13762280/zsh-compinit-insecure-directories
+
+installing zsh may fail to clone ohmyzsh repo
+run this command with sudo:
+https://github.com/jw2340/dotfiles/blob/master/install.sh#L6
 ```
 

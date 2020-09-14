@@ -18,6 +18,10 @@ dotfiles config --local status.showUntrackedFiles no
 
 # if there is a merge conflict, rename the conflicting files and try again
 
+# if computer username changed
+update path to oh-my-zsh installation
+https://github.com/jw2340/dotfiles/blob/master/.zshrc#L5
+
 # install dependencies
 sh install.sh
 

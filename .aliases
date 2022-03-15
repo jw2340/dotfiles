@@ -1,0 +1,26 @@
+# ----------------------
+# Aliases
+# ----------------------
+
+# runs task-minder.sh on a command to say done or error
+alias mind="sh $HOME/task-minder.sh"
+
+alias -s txt=textedit
+
+alias -g G="| grep"
+
+# Docker
+alias dc=docker-compose
+
+# Git
+alias glom='git pull origin master'
+alias gcbom=git_checkout_branch_from_origin_master
+alias grsh='git reset --soft HEAD@{1}'
+
+# ----------------------
+# Functions
+# ----------------------
+
+# Git
+alias glom='git pull origin master'
+alias gcbom=git_checkout_branch_from_origin_master

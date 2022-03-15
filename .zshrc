@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jinw/.oh-my-zsh"
+export ZSH="/Users/jwang/.oh-my-zsh"
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -147,10 +147,4 @@ bindkey '^r' history-incremental-search-backward
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPS="--extended"
 
-alias python=/usr/local/bin/python3.8
-
-export JAVA_HOME="$(/usr/libexec/java_home -v 11)"
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-source /Users/jinw/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

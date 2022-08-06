@@ -14,15 +14,10 @@ dotfiles checkout
 # ignore untracked (non dotfiles) files
 dotfiles config --local status.showUntrackedFiles no
 
-# if there is a merge conflict, rename the conflicting files and try again
-
-# if computer username changed update path to oh-my-zsh installation
+# if computer username changed, update USER in .zshrc
 
 # install dependencies
 sh install.sh
-
-# update ZSH export in .zshrc if username is different
-# export ZSH="/Users/{username}/.oh-my-zsh"
 ```
 
 ## Possible errors and solutions

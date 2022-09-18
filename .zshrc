@@ -53,6 +53,9 @@ export FZF_DEFAULT_OPS="--extended"
 
 # kubectl
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
+# use kubectl version from asdf
+# see https://stackoverflow.com/questions/70154620/use-kubectl-from-asdf-instead-of-homebrew
+. /usr/local/opt/asdf/libexec/asdf.sh
 
 # load seperate config files
 for conf in "$HOME/zshrc/"*.sh; do

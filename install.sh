@@ -10,7 +10,11 @@ fi
 sudo sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install command line tools
-brew install fzf ag jq kubectl
+brew install fzf ag jq kubectl yq asdf tree
+
+# Install asdf kubctl plugin
+# See https://github.com/asdf-community/asdf-kubectl
+asdf plugin-add kubectl https://github.com/asdf-community/asdf-kubectl.git
 
 # Install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install

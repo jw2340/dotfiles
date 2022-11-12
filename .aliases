@@ -18,7 +18,7 @@ alias dc=docker-compose
 alias glom='git pull origin master'
 alias gcbom=git_checkout_branch_from_origin_master
 alias grsh='git reset --soft HEAD@{1}'
-alias glog="git log --all --pretty='format:%d %Cgreen%h%Creset %an - %s' --graph" # from https://coderwall.com/p/syqplg/glog-a-git-log-alias-for-a-decent-view-of-your-repo
+alias glog="git log --pretty='format:%d %Cgreen%h%Creset %an - %s' --graph" # from https://coderwall.com/p/syqplg/glog-a-git-log-alias-for-a-decent-view-of-your-repo
 
 # Terragrunt
 alias tg=terragrunt

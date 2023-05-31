@@ -13,7 +13,7 @@ sudo sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/ins
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 # Install command line tools
-brew install fzf ag jq kubectl yq asdf tree
+brew install fzf ag jq kubectl yq asdf tree stern
 
 # Install asdf kubctl plugin
 # See https://github.com/asdf-community/asdf-kubectl

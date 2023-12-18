@@ -5,12 +5,6 @@
 # open vs code from command line
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
-git_checkout_branch_from_origin_master()
-{
-  git fetch # refresh origin/master
-  git checkout -b $1 origin/master --no-track # create new branch off of it
-}
-
 # ===fuzzyfinder===
 # fd - cd to selected directory
 fd() {

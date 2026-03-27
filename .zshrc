@@ -62,3 +62,22 @@ for conf in "$HOME/zshrc/"*.sh; do
   source "${conf}"
 done
 unset conf
+
+# go
+# readded below to run tests with infra tests framework
+# export PATH=$PATH:$(go env GOPATH)/bin
+# added below to use gotestsum
+export PATH="$(go env GOPATH)/bin:$PATH"
+export PATH=$PATH:$(go env GOPATH)/bin
+# readded bc GOPATH pointing into your asdf install, causing permission issues. set GOPATH to a writable path under home
+export GOPATH=$HOME/go
+#export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+#above was causing linting errors related to version mismatch
+# from https://github.com/asdf-community/asdf-golang?tab=readme-ov-file#goroot
+. ~/.asdf/plugins/golang/set-env.zsh
+#temporarily removed above - then readded it
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

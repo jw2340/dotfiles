@@ -22,9 +22,9 @@ sudo git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh
 brew install fzf ag jq kubectl yq asdf tree stern gnupg
 
 # Install asdf plugins
-# See https://github.com/asdf-community/asdf-kubectl
 asdf plugin-add kubectl https://github.com/asdf-community/asdf-kubectl.git
-asdf plugin add nodejs
+asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
+asdf plugin add golangci-lint https://github.com/hypnoglow/asdf-golangci-lint.git
 
 # Install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install

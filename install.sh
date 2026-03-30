@@ -7,7 +7,7 @@ else
 fi
 
 # Install apps
-brew install --cask google-chrome spotify visual-studio-code flycut rectangle flux-app slack discord expressvpn git
+brew install google-chrome spotify visual-studio-code flycut rectangle flux-app slack discord expressvpn git
 
 # Install terminal
 brew install --cask ghostty@tip
